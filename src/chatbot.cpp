@@ -47,6 +47,7 @@ ChatBot::~ChatBot()
 ChatBot::ChatBot(const ChatBot &source){ // copy constructor
     std::cout << "ChatBot Copy Constructor" << std::endl;
     // assign memory
+    // Deep copy
     if(source._image != NULL) {
         _image = new wxBitmap(); //TODO Good?
         *_image = *source._image;
@@ -54,6 +55,7 @@ ChatBot::ChatBot(const ChatBot &source){ // copy constructor
         _image = nullptr;
     }
 
+    // Shallow copy
     // _chatLogic = source._chatLogic;
     // _currentNode = source._currentNode;
     // _rootNode = source._rootNode;
