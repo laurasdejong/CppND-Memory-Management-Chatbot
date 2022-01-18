@@ -13,7 +13,7 @@ class GraphNode
 {
 private:
     //// STUDENT CODE
-    ////
+    //// changed
 
     // data handles (owned)
     std::vector<GraphEdge *> _childEdges;  // edges to subsequent nodes
