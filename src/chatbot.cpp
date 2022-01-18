@@ -44,6 +44,8 @@ ChatBot::~ChatBot()
 }
 
 //// STUDENT CODE
+// Changed
+
 ChatBot::ChatBot(const ChatBot &source){ // copy constructor
     std::cout << "ChatBot Copy Constructor" << std::endl;
     // assign memory

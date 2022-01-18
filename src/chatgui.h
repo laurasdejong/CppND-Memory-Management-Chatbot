@@ -15,7 +15,7 @@ private:
     wxBitmap _image;
 
     //// STUDENT CODE
-    ////
+    //// Changed
 
     std::unique_ptr<ChatLogic> _chatLogic;
 

@@ -115,7 +115,7 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
     wxInitAllImageHandlers();
 
     //// STUDENT CODE
-    ////
+    //// Changed
 
     // create chat logic instance
     _chatLogic = std::make_unique<ChatLogic>();
@@ -133,7 +133,7 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
 ChatBotPanelDialog::~ChatBotPanelDialog()
 {
     //// STUDENT CODE
-    ////
+    //// Changed
 
     // delete _chatLogic;
 
