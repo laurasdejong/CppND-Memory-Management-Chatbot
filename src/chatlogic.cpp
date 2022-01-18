@@ -14,6 +14,7 @@
 
 ChatLogic::ChatLogic()
 {
+    std::cout << "ChatLogic Constructor" << std::endl;
     //// STUDENT CODE
     ////
 
@@ -29,6 +30,7 @@ ChatLogic::ChatLogic()
 
 ChatLogic::~ChatLogic()
 {
+    std::cout << "ChatLogic Destructor" << std::endl;
     //// STUDENT CODE
     //// Changed
 
@@ -217,11 +219,10 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
     }
 
     // add chatbot to graph root node
-    ChatBot chatbot = ChatBot("../images/chatbot.png");
+    ChatBot chatBot = ChatBot("../images/chatbot.png");
 
     _chatBot->SetRootNode(rootNode);
-    rootNode->MoveChatbotHere(_chatBot);
-    
+    rootNode->MoveChatbotHere(std::move(chatBot));
     ////
     //// EOF STUDENT CODE
 }
