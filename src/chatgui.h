@@ -27,7 +27,7 @@ public:
     ChatBotPanelDialog(wxWindow *parent, wxWindowID id);
     ~ChatBotPanelDialog();
 
-    // Changed! Although not in code box...
+    // Changed in 1! Although not in code box...
     // getter / setter
     ChatLogic *GetChatLogicHandle() { return _chatLogic.get(); }
 
