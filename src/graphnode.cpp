@@ -9,9 +9,9 @@ GraphNode::GraphNode(int id)
 GraphNode::~GraphNode()
 {
     //// STUDENT CODE
-    ////
+    //// check
 
-    delete _chatBot; 
+    // delete _chatBot;
 
     ////
     //// EOF STUDENT CODE
