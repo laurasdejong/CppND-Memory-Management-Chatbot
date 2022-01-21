@@ -14,10 +14,13 @@ class ChatLogic
 {
 private:
     //// STUDENT CODE
-    ////
+    //// changed in 3
 
     // data handles (owned)
-    std::vector<GraphNode *> _nodes;
+    // changed in 3
+    std::vector<std::unique_ptr<GraphNode>> _nodes;
+
+    //unchanged
     std::vector<GraphEdge *> _edges;
 
     ////
