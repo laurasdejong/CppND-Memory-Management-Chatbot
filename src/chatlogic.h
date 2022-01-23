@@ -20,8 +20,8 @@ private:
     // changed in 3
     std::vector<std::unique_ptr<GraphNode>> _nodes;
 
-    //unchanged
-    std::vector<GraphEdge *> _edges;
+    // Changed in 4
+    std::vector<std::unique_ptr<GraphEdge>> _edges;
 
     ////
     //// EOF STUDENT CODE
