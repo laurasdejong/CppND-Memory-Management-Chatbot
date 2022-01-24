@@ -34,7 +34,7 @@ ChatLogic::~ChatLogic()
 
     // changed in 5
     // delete chatbot instance
-    delete _chatBot;
+    // delete _chatBot;
 
     // changed in 3
     // delete all nodes
