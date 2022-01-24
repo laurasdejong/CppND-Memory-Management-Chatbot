@@ -180,7 +180,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
                             // changed in 3
                             edge->SetParentNode((*parentNode).get());
                             // changed in 4
-                            _edges.emplace_back(edge.get());
+                            // _edges.emplace_back(edge.get());
 
                             // find all keywords for current node
                             AddAllTokensToElement("KEYWORD", tokens, *edge);
