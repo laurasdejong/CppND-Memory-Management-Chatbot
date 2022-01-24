@@ -90,9 +90,9 @@ ChatBot::ChatBot(ChatBot &&source){
     std::cout << "ChatBot Move Constructor" << std::endl;
 
     // Remove old image
-    if (_image != NULL) {
-        delete _image;
-    }
+    // if (_image != NULL) {
+    //     delete _image;
+    // }
     _image = source._image;
 
     // Shallow copy
@@ -115,10 +115,14 @@ ChatBot& ChatBot::operator=(ChatBot &&source){
     }
 
         // Remove old image
-    if (_image != NULL) {
-        delete _image;
+    // if (_image != NULL) {
+    //     delete _image;
+    // }
+    if (source._image != NULL){
+        _image = source._image;
+    } else {
+        _image = NULL;
     }
-    _image = source._image;
 
     // Shallow copy
     _chatLogic = source._chatLogic;
@@ -131,7 +135,6 @@ ChatBot& ChatBot::operator=(ChatBot &&source){
     source._chatLogic = nullptr;
     source._currentNode = nullptr;
     source._rootNode = nullptr;
-
     return *this;
 } //move assignment operator
 
